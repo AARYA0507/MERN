@@ -81,3 +81,17 @@ function firstNonRepeatingCharacter (str) {
 
   return "No repeating character";
 }
+// reverse only the words in a string
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+function reverseWordsInString(str) {
+  let words = str.trim().split(" ");
+  for (let i = 0; i < words.length; i++) {
+    words[i] = reverseString(words[i]);
+  }
+  return words.join(" ");
+}
+
+console.log(reverseWordsInString("i am boy"));
