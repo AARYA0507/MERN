@@ -11,6 +11,7 @@ console.log(naturalSum(-5));
 console.log(naturalSum(0));
 console.log(naturalSum(10));
 
+
 /* Recursive function to print the GCD of two numbers */
 
 
@@ -72,8 +73,14 @@ function binaryExponentiation(a, n) {
 
 console.log(binaryExponentiation(2, 10));
 console.log(binaryExponentiation(5, 15));
+
 // function to print fibonaci series using recursion
+
+console.log(fibonacci(10));
 function fibonacci(n) {
-  if (n <= 1) return n;
+  if (n === 0) return 0;   
+  if (n === 1) return 1;   // base case
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
+
+

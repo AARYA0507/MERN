@@ -40,6 +40,21 @@ function binarySearch(arr, target, left = 0, right = arr.length - 1) {
   else return binarySearch(arr, target, mid + 1, right);
 }
 console.log("Binary Search:", binarySearch([1,2,3,4,5,6,7], 5));
+// function to check string are anagram or not
+function areAnagrams(str1, str2) {
+  if (str1.length !== str2.length) return false;
+  const charCount = {};
+
+  for (let char of str1) {
+    charCount[char] = (charCount[char] || 0) + 1;
+  }
+  for (let char of str2) {
+    if (!charCount[char]) return false;
+    charCount[char]--;
+  }
+  return true;
+}
+
 
 
 
