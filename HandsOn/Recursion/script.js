@@ -54,8 +54,42 @@ function areAnagrams(str1, str2) {
   }
   return true;
 }
+// print this pattern
+/*
+A
+AB
+BCD
+CDEF
+DEFGH
+*/
+/*
+function printPattern(n) {
+  for (let i = 0; i < n; i++) {
+    let str = " ";
+    for (let j = 0; j <= i; j++) {
+      str += String.fromCharCode(65 + i + j);
+    }
+    console.log(str);
+  }
+}
 
+printPattern(5);
+*/
+// function to find length of longest subString with non -repeating characters
+function lengthOfLongestSubstring(s) {
+  let n = s.length;
+  let set = new Set();
+  let ans = 0, i = 0, j = 0;
 
-
-
-
+  while (j < n) {
+    if (!set.has(s[j])) {
+      set.add(s[j]);
+      ans = Math.max(ans,j-1,i+1);
+      j++;
+    } else {
+      set.delete(s[i]);
+      i++;
+    }
+  }
+  return ans;
+}
