@@ -1,5 +1,4 @@
-// handson.js
-// Extra recursion concepts not in the given file
+
 
 /* 1. Factorial using recursion */
 function factorial(n) {

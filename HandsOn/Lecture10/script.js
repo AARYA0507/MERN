@@ -1,5 +1,4 @@
-// handsOn.js
-// Extra String Concepts (Not in script (2).js)
+
 
 // 1. Changing case
 const text = "Hello World";

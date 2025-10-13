@@ -1,10 +1,9 @@
-// handsOn.js
-// Extra Nested Array Concepts (Not in script (3).js)
+
 
 // 1. Flattening a nested array (1 level)
 const nested1 = [1, [2, 3], [4, 5, [6]]];
 console.log("Flat(1):", nested1.flat()); 
-console.log("Flat(Infinity):", nested1.flat(Infinity)); // completely flatten
+console.log("Flat(Infinity):", nested1.flat(Infinity)); 
 
 // 2. Recursive function to flatten nested array
 function flattenArray(arr) {
