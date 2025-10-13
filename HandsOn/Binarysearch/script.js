@@ -1,10 +1,6 @@
 
 
-// Binary Search Recap:
-// - Works on sorted data
-// - Time Complexity: O(log n)
-// - Space Complexity: O(1)
-// - Divide and conquer technique
+
 
 
 /*  Find the last index of target in a sorted array */
@@ -128,9 +124,7 @@ function findMinInRotated(arr) {
 console.log("Minimum in rotated array:", findMinInRotated([4,5,6,7,0,1,2]));
 
 
-/*  Binary Search on answer — Aggressive Cows (concept demo)
-   Used when answer lies in range, not in array directly
-*/
+
 function aggressiveCows(stalls, cows) {
   stalls.sort((a,b)=>a-b);
   let low = 1;
@@ -161,23 +155,7 @@ function aggressiveCows(stalls, cows) {
 console.log("Max distance (Aggressive Cows):", aggressiveCows([1,2,4,8,9], 3));
 
 
-// Binar search More theoritical knowledge
-/*
-➡ Binary Search Applications:
-   - Element searching (standard)
-   - Finding boundaries (first, last, lower, upper)
-   - Searching in rotated arrays
-   - Solving optimization problems (“min/max possible answer”)
-   - Mathematical problems (square root, cube root)
-   - Matrix and 2D search problems
 
-➡ Time Complexity: O(log n)
-➡ Space Complexity: O(1)
-
-➡ Key Tip:
-   Whenever the array is sorted or the problem has a monotonic (increasing/decreasing) property,
-   you can probably use Binary Search!
-*/
 
 
 

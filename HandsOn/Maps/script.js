@@ -1,6 +1,5 @@
 
 
-// 1️⃣ Create a Map in different ways
 const map1 = new Map();
 map1.set("name", "Aarya");
 map1.set("age", 22);
@@ -77,21 +76,6 @@ console.log("User Map with objects as keys:", userMap);
 
 
 
-//  Extra Information about Map
 
-/*
-🔹 Map is an ordered collection of key-value pairs.
-🔹 Any value (objects, arrays, functions, primitives) can be used as a key.
-🔹 Maps are more efficient than objects for frequent add/delete operations.
-🔹 Common Use-Cases:
-    - Frequency counting
-    - Grouping data
-    - Caching (memoization)
-    - Storing metadata for objects
-🔹 Time Complexity:
-    - set/get/has/delete → O(1) average
-🔹 Map vs WeakMap:
-    - WeakMap only allows object keys and doesn’t prevent garbage collection.
-*/
 
 
