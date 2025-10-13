@@ -18,16 +18,7 @@ console.log(fruits);
 
 fruits.clear();
 console.log(fruits); 
-/*
-// iterating over a set
-let numbers = new Set([1, 2, 3]);
 
-for (let num of numbers) {
-  console.log(num);
-}
-// Using forEach
-numbers.forEach(value => console.log(value));
-*/
 // Converting Set to Array
 let numSet = new Set([1, 2, 3]);
 let numArray = Array.from(numSet);

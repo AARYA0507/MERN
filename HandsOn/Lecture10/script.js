@@ -10,9 +10,9 @@ console.log("Character at index 1:", text.charAt(1));
 console.log("Unicode of index 1:", text.charCodeAt(1));
 
 // 3. substring(), slice(), substr()
-console.log("Substring(0,5):", text.substring(0, 5)); // "Hello"
-console.log("Slice(0,5):", text.slice(0, 5));         // "Hello"
-console.log("Substr(0,5):", text.substr(0, 5));       // "Hello"
+console.log("Substring(0,5):", text.substring(0, 5)); 
+console.log("Slice(0,5):", text.slice(0, 5));         
+console.log("Substr(0,5):", text.substr(0, 5));       
 
 // 4. startsWith() & endsWith()
 console.log("Starts with 'Hel':", text.startsWith("Hel"));

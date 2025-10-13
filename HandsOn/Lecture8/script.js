@@ -39,8 +39,8 @@ console.log("Destructured:", name, city);
 
 // 8. Optional chaining (?.) - avoid errors if property missing
 const user = { profile: { username: "coder123" } };
-console.log("Username:", user.profile?.username); //  coder123
-console.log("Phone:", user.profile?.contact?.phone); //  undefined, no error
+console.log("Username:", user.profile?.username); 
+console.log("Phone:", user.profile?.contact?.phone); 
 
 // 9. Object.create() - create new object with prototype
 const protoObj = { greet: function () { console.log("Hello!"); } };
@@ -51,5 +51,5 @@ newObj.greet();
 const original = { x: 10, y: { z: 20 } };
 const deepClone = JSON.parse(JSON.stringify(original));
 deepClone.y.z = 99;
-console.log("Original after deep clone change:", original); // unchanged
+console.log("Original after deep clone change:", original); 
 console.log("Deep cloned object:", deepClone);
